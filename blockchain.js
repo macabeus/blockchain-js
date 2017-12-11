@@ -93,6 +93,8 @@ class Blockchain {
       lastBlock = block;
       currentIndex += 1;
     }
+
+    return true;
   }
 
   /**
