@@ -79,9 +79,6 @@ class Blockchain {
 
     while (currentIndex < chain.length) {
       const block = chain[currentIndex];
-      console.log(`${lastBlock}`);
-      console.log(`${block}`);
-      console.log('---------');
 
       // Check that the hash of the block is correct
       if (block['previousHash'] !== Blockchain.hash(lastBlock)) {
